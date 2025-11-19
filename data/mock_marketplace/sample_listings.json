@@ -1,0 +1,84 @@
+[
+  {
+    "id": "mock_001",
+    "source": "mock_marketplace",
+    "url": "https://example.com/item/12345",
+    "title": "Antique Oil Painting - Landscape with River",
+    "description": "Beautiful old oil painting on canvas, depicting a pastoral landscape with a river. Unsigned. Frame included.",
+    "price": 450,
+    "currency": "EUR",
+    "seller": "antique_collector_42",
+    "location": "Vienna, Austria",
+    "posted_date": "2024-01-10",
+    "image_urls": [
+      "https://example.com/images/12345_1.jpg",
+      "https://example.com/images/12345_2.jpg"
+    ],
+    "category": "Art & Antiques",
+    "condition": "Used - good condition",
+    "dimensions": "60x80 cm",
+    "potential_artwork": true
+  },
+  {
+    "id": "mock_002",
+    "source": "mock_marketplace",
+    "url": "https://example.com/item/12346",
+    "title": "Poster Print of Starry Night",
+    "description": "High quality print of Van Gogh's Starry Night. Not an original.",
+    "price": 25,
+    "currency": "EUR",
+    "seller": "poster_shop_vienna",
+    "location": "Vienna, Austria",
+    "posted_date": "2024-01-12",
+    "image_urls": [
+      "https://example.com/images/12346_1.jpg"
+    ],
+    "category": "Home Decor",
+    "condition": "New",
+    "dimensions": "50x70 cm",
+    "potential_artwork": false
+  },
+  {
+    "id": "mock_003",
+    "source": "mock_auction",
+    "url": "https://example.com/auction/567",
+    "title": "Impressionist Flower Still Life - Unsigned",
+    "description": "Oil on canvas still life with flowers in a vase. Impressionist style, late 19th or early 20th century. Requires restoration.",
+    "price": 1200,
+    "currency": "EUR",
+    "seller": "Dorotheum",
+    "location": "Vienna, Austria",
+    "posted_date": "2024-01-15",
+    "auction_date": "2024-02-01",
+    "estimate_low": 800,
+    "estimate_high": 1500,
+    "image_urls": [
+      "https://example.com/auction/567_1.jpg",
+      "https://example.com/auction/567_2.jpg",
+      "https://example.com/auction/567_detail.jpg"
+    ],
+    "category": "Fine Art",
+    "condition": "Restoration needed - craquelé visible",
+    "dimensions": "45x60 cm",
+    "potential_artwork": true
+  },
+  {
+    "id": "mock_004",
+    "source": "mock_marketplace",
+    "url": "https://example.com/item/12347",
+    "title": "Abstract Modern Art - Original Acrylic",
+    "description": "Original abstract acrylic painting by local artist. Signed on back. Modern style with bold colors.",
+    "price": 180,
+    "currency": "EUR",
+    "seller": "modern_artist_23",
+    "location": "Salzburg, Austria",
+    "posted_date": "2024-01-14",
+    "image_urls": [
+      "https://example.com/images/12347_1.jpg"
+    ],
+    "category": "Art & Antiques",
+    "condition": "New",
+    "dimensions": "70x100 cm",
+    "potential_artwork": true
+  }
+]
