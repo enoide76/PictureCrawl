@@ -1,0 +1,415 @@
+/* Gemäldeagent Frontend Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+main {
+    padding: 40px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.upload-area {
+    border: 3px dashed #ddd;
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.upload-area:hover {
+    border-color: #667eea;
+    background: #f8f9fa;
+}
+
+.upload-area.dragover {
+    border-color: #667eea;
+    background: #e8eaf6;
+}
+
+.upload-icon {
+    width: 64px;
+    height: 64px;
+    color: #667eea;
+    margin-bottom: 16px;
+}
+
+.upload-content p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.image-preview {
+    position: relative;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #ecf0f1;
+    color: #2c3e50;
+    margin-left: 12px;
+}
+
+.btn-secondary:hover {
+    background: #d5dbdb;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Results Section */
+.results-section {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #667eea;
+}
+
+.result-card h3 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-size: 1.4em;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-item .label {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.result-item .value {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Artist List */
+.artist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.artist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+}
+
+.artist-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.artist-similarity {
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Authenticity Score */
+.authenticity-score {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.score-circle.high {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.score-circle.medium {
+    background: linear-gradient(135deg, #f39c12, #f1c40f);
+}
+
+.score-circle.low {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.score-label {
+    font-size: 0.4em;
+    opacity: 0.8;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.badge.yes {
+    background: #fee;
+    color: #c0392b;
+}
+
+.badge.no {
+    background: #efe;
+    color: #27ae60;
+}
+
+/* Valuation */
+.valuation-box {
+    text-align: center;
+}
+
+.estimated-value {
+    margin-bottom: 16px;
+}
+
+.estimated-value .label {
+    display: block;
+    color: #7f8c8d;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.value-large {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.range-text {
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+.confidence-badge {
+    margin-top: 12px;
+}
+
+.confidence-badge span {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.confidence-badge .high {
+    background: #d5f4e6;
+    color: #27ae60;
+}
+
+.confidence-badge .medium {
+    background: #fef5e7;
+    color: #f39c12;
+}
+
+.confidence-badge .low {
+    background: #fadbd8;
+    color: #e74c3c;
+}
+
+.notes {
+    margin-top: 16px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Actions */
+.actions {
+    margin-top: 32px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        border-radius: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}

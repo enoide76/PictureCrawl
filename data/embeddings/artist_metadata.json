@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "artist_name": "Claude Monet",
+    "epoch": "Impressionism",
+    "style": "Impressionism",
+    "years_active": "1860-1926",
+    "nationality": "French",
+    "known_for": "Water Lilies, Haystacks, Rouen Cathedral series",
+    "signature_style": "Short brushstrokes, emphasis on light, outdoor scenes"
+  },
+  {
+    "id": 2,
+    "artist_name": "Vincent van Gogh",
+    "epoch": "Post-Impressionism",
+    "style": "Post-Impressionism",
+    "years_active": "1880-1890",
+    "nationality": "Dutch",
+    "known_for": "The Starry Night, Sunflowers, Self-portraits",
+    "signature_style": "Bold colors, dramatic brushstrokes, emotional intensity"
+  },
+  {
+    "id": 3,
+    "artist_name": "Camille Pissarro",
+    "epoch": "Impressionism",
+    "style": "Impressionism",
+    "years_active": "1855-1903",
+    "nationality": "French",
+    "years_active": "Boulevard Montmartre, The Harvest, Rural landscapes",
+    "signature_style": "Soft colors, rural and urban scenes, pointillist influence"
+  },
+  {
+    "id": 4,
+    "artist_name": "Edvard Munch",
+    "epoch": "Expressionism",
+    "style": "Expressionism",
+    "years_active": "1880-1944",
+    "nationality": "Norwegian",
+    "known_for": "The Scream, The Madonna, Anxiety",
+    "signature_style": "Emotional themes, bold outlines, symbolic imagery"
+  },
+  {
+    "id": 5,
+    "artist_name": "Paul Cézanne",
+    "epoch": "Post-Impressionism",
+    "style": "Post-Impressionism",
+    "years_active": "1860-1906",
+    "nationality": "French",
+    "known_for": "Mont Sainte-Victoire, Still Life with Apples, The Card Players",
+    "signature_style": "Geometric forms, multiple perspectives, building blocks of cubism"
+  },
+  {
+    "id": 6,
+    "artist_name": "Pierre-Auguste Renoir",
+    "epoch": "Impressionism",
+    "style": "Impressionism",
+    "years_active": "1860-1919",
+    "nationality": "French",
+    "known_for": "Dance at Le Moulin de la Galette, Luncheon of the Boating Party",
+    "signature_style": "Vibrant light, rich colors, intimate scenes"
+  },
+  {
+    "id": 7,
+    "artist_name": "Pablo Picasso",
+    "epoch": "Cubism",
+    "style": "Cubism",
+    "years_active": "1894-1973",
+    "nationality": "Spanish",
+    "known_for": "Les Demoiselles d'Avignon, Guernica, The Weeping Woman",
+    "signature_style": "Geometric abstraction, multiple perspectives, fragmented forms"
+  },
+  {
+    "id": 8,
+    "artist_name": "Rembrandt van Rijn",
+    "epoch": "Baroque",
+    "style": "Baroque",
+    "years_active": "1625-1669",
+    "nationality": "Dutch",
+    "known_for": "The Night Watch, Self-portraits, The Anatomy Lesson",
+    "signature_style": "Dramatic lighting (chiaroscuro), psychological depth, detailed realism"
+  },
+  {
+    "id": 9,
+    "artist_name": "Johannes Vermeer",
+    "epoch": "Baroque",
+    "style": "Dutch Golden Age",
+    "years_active": "1653-1675",
+    "nationality": "Dutch",
+    "known_for": "Girl with a Pearl Earring, The Milkmaid, View of Delft",
+    "signature_style": "Masterful light, intimate domestic scenes, precise detail"
+  },
+  {
+    "id": 10,
+    "artist_name": "Gustav Klimt",
+    "epoch": "Art Nouveau",
+    "style": "Symbolism",
+    "years_active": "1880-1918",
+    "nationality": "Austrian",
+    "known_for": "The Kiss, Portrait of Adele Bloch-Bauer, The Tree of Life",
+    "signature_style": "Gold leaf, decorative patterns, erotic themes, symbolism"
+  }
+]
