@@ -2,7 +2,7 @@
 Image preprocessing and normalization.
 """
 from pathlib import Path
-from typing import Tuple, Union
+from typing import Optional, Tuple, Union
 
 import cv2
 import numpy as np
