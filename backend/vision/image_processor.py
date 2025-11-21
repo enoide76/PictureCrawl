@@ -224,17 +224,31 @@ class ImageProcessor:
         Returns:
             Array of dominant colors (k, 3)
         """
+        import warnings
         from sklearn.cluster import KMeans
+        from sklearn.exceptions import ConvergenceWarning
 
         # Resize for faster processing
         small_image = image.resize((100, 100))
         img_array = np.array(small_image).reshape(-1, 3)
 
-        # K-means clustering
-        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
-        kmeans.fit(img_array)
+        # Get unique colors to adjust k if needed
+        unique_colors = np.unique(img_array, axis=0)
+        actual_k = min(k, len(unique_colors))
 
-        return kmeans.cluster_centers_
+        # K-means clustering with warning suppression for edge cases
+        with warnings.catch_warnings():
+            warnings.filterwarnings('ignore', category=ConvergenceWarning)
+            kmeans = KMeans(n_clusters=actual_k, random_state=42, n_init=10)
+            kmeans.fit(img_array)
+
+        # If we found fewer clusters than requested, pad with the last cluster center
+        centers = kmeans.cluster_centers_
+        if len(centers) < k:
+            padding = np.repeat([centers[-1]], k - len(centers), axis=0)
+            centers = np.vstack([centers, padding])
+
+        return centers
 
 
 # Global processor instance
