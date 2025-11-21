@@ -265,7 +265,7 @@ class StyleClassifier:
         # Calculate confidence
         confidence = avg_artwork_sim / (avg_artwork_sim + avg_non_artwork_sim)
 
-        is_art = confidence >= threshold
+        is_art = bool(confidence >= threshold)
 
         log.debug(f"Artwork detection: {is_art} (confidence: {confidence:.2f})")
 

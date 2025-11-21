@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 from typing import Literal, Optional
 
-from pydantic import Field
+from pydantic import ConfigDict, Field
 from pydantic_settings import BaseSettings
 
 
@@ -119,10 +119,11 @@ class Settings(BaseSettings):
     TESTING: bool = Field(default=False)
     MOCK_MARKETPLACES: bool = Field(default=True)
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-        case_sensitive = True
+    model_config = ConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        case_sensitive=True
+    )
 
     @property
     def cors_origins_list(self) -> list[str]:
